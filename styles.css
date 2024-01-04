@@ -9,7 +9,7 @@
     margin: 100px auto 0 auto;
 }
 
-#picture {
+.picture {
     position: absolute;
     transition: left 0.3s;
 }
