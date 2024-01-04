@@ -1,0 +1,45 @@
+#currentPicture {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 1000px;
+    margin: 100px auto 0 auto;
+}
+
+#picture {
+    position: absolute;
+    transition: left 0.3s;
+}
+
+#picture1 {
+    left: 0px;
+}
+
+#picture2 {
+    left: 1000px
+}
+
+#picture3 {
+    left: 2000px
+}
+
+img {
+    width: 800px;
+}
+
+#selectPicture {
+    position: absolute;
+    bottom: 50px;
+    width: fit-content;
+}
+
+#buttonDiv {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    justify-content: center;
+
+}
