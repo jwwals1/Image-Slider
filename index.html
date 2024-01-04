@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div id="currentPicture">
+      <div id="picture1">
+        <div id="slide">
+          <img src="./media/alfredo.png" alt="picture 1" width="400px" />
+        </div>
+        <div id="picture2">
+          <img src="./media/lasagna.png" alt="picture 2" width="400px" />
+        </div>
+        <div id="picture3">
+          <img src="./media/pasta.png" alt="picture 3" width="400px" />
+        </div>
+        <button id="leftArrow" class="arrow">leftArrow</button>
+        <button id="rightArrow" class="arrow">rightArrow</button>
+        <form action="selectPicture">
+          <input id="dot1" type="radio" name="circle" checked />
+          <input id="dot2" type="radio" name="circle" />
+          <input id="dot3" type="radio" name="circle" />
+        </form>
+        <div id="buttonDiv">
+          <button id="stop">Stop</button>
+          <button id="play">Play</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
