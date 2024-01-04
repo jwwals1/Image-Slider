@@ -9,27 +9,25 @@
   </head>
   <body>
     <div id="currentPicture">
-      <div id="picture1">
-        <div id="slide">
-          <img src="./media/alfredo.png" alt="picture 1" width="400px" />
-        </div>
-        <div id="picture2">
-          <img src="./media/lasagna.png" alt="picture 2" width="400px" />
-        </div>
-        <div id="picture3">
-          <img src="./media/pasta.png" alt="picture 3" width="400px" />
-        </div>
-        <button id="leftArrow" class="arrow">leftArrow</button>
-        <button id="rightArrow" class="arrow">rightArrow</button>
-        <form action="selectPicture">
-          <input id="dot1" type="radio" name="circle" checked />
-          <input id="dot2" type="radio" name="circle" />
-          <input id="dot3" type="radio" name="circle" />
-        </form>
-        <div id="buttonDiv">
-          <button id="stop">Stop</button>
-          <button id="play">Play</button>
-        </div>
+      <div id="picture1" class="picture">
+        <img src="./media/alfredo.png" alt="picture 1" />
+      </div>
+      <div id="picture2" class="picture">
+        <img src="./media/lasagna.png" alt="picture 2" />
+      </div>
+      <div id="picture3" class="picture">
+        <img src="./media/pasta.png" alt="picture 3" />
+      </div>
+      <button id="leftArrow" class="arrow">leftArrow</button>
+      <button id="rightArrow" class="arrow">rightArrow</button>
+      <form id="selectPicture">
+        <input id="circle1" type="radio" class="circle" name="circle" checked />
+        <input id="circle2" type="radio" class="circle" name="circle" />
+        <input id="circle3" type="radio" class="circle" name="circle" />
+      </form>
+      <div id="buttonDiv">
+        <button id="stop">Stop</button>
+        <button id="play">Play</button>
       </div>
     </div>
   </body>
