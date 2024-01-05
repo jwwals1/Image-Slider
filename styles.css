@@ -1,17 +1,26 @@
+h1 {
+    display: grid;
+    justify-content: center;
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 #currentPicture {
     display: flex;
     position: relative;
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    width: 1000px;
-    height: 1000px;
-    margin: 100px auto 0 auto;
+    width: 800px;
+    height: 500px;
+    margin: 50px auto 0 auto;
+    outline: solid 5px black;
 }
 
 .picture {
     position: absolute;
     transition: left 0.3s;
+    width: 800px;
 }
 
 #picture1 {
@@ -19,14 +28,14 @@
 }
 
 #picture2 {
-    left: 1000px
+    left: 1000px;
 }
 
 #picture3 {
-    left: 2000px
+    left: 2000px;
 }
 
-img {
+#pictureSize {
     width: 800px;
 }
 
@@ -41,5 +50,28 @@ img {
     position: absolute;
     bottom: 20px;
     justify-content: center;
+}
 
+#buttonDiv {
+    gap: 10px;
+    opacity: 80%;
+    color: white;
+}
+
+#stop, #play {
+    padding: 4px;
+}
+
+#leftArrow {
+    font-size: 10px;
+    opacity: 80%;
+}
+
+#rightArrow {
+    font-size: 10px;
+    opacity: 80%;
+}
+
+.arrow {
+    margin: 300px;
 }
