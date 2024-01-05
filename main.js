@@ -35,7 +35,7 @@ function moveLeft() {
 
 function moveRight() {
     const currentPictureNumber = getCurrentPictureNumber();
-    if (currentPictureNumber < 4 ) {
+    if (currentPictureNumber < 3 ) {
         displayPicture(currentPictureNumber + 1);
     } else {
         displayPicture(1);
