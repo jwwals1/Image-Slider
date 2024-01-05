@@ -8,18 +8,23 @@
     <script src="main.js" defer></script>
   </head>
   <body>
+    <h1>Season Slide Show</h1>
     <div id="currentPicture">
       <div id="picture1" class="picture">
-        <img src="./media/alfredo.png" alt="picture 1" />
+        <img src="./media/winter.jpg" alt="picture 1" id="pictureSize" />
       </div>
       <div id="picture2" class="picture">
-        <img src="./media/lasagna.png" alt="picture 2" />
+        <img src="./media/spring.jpg" alt="picture 2" id="pictureSize" />
       </div>
       <div id="picture3" class="picture">
-        <img src="./media/pasta.png" alt="picture 3" />
+        <img src="./media/summer.jpg" alt="picture 3" id="pictureSize" />
       </div>
-      <button id="leftArrow" class="arrow">leftArrow</button>
-      <button id="rightArrow" class="arrow">rightArrow</button>
+      <button id="leftArrow" class="arrow">
+        <img src="media/arrow-left-solid.svg" alt="left arrow icon" />
+      </button>
+      <button id="rightArrow" class="arrow">
+        <img src="media/arrow-right-solid.svg" alt="right arrow icon" />
+      </button>
       <form id="selectPicture">
         <input id="circle1" type="radio" class="circle" name="circle" checked />
         <input id="circle2" type="radio" class="circle" name="circle" />
