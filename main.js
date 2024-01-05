@@ -3,7 +3,7 @@ const circles = document.querySelectorAll('.circle');
 let slideShow;
 
 function getCurrentPictureNumber() {
-    for (let i = 1; i <= 3; i++) {
+    for (let i = 1; i <= 4; i++) {
         let picture = document.getElementById('picture' + i);
         let leftString = getComputedStyle(picture).getPropertyValue('left');
         if (leftString === '0px') {
@@ -13,9 +13,9 @@ function getCurrentPictureNumber() {
 }
 
 function displayPicture(newNumber) {
-    if (newNumber < 1 || newNumber > 3) return
+    if (newNumber < 1 || newNumber > 4) return
     const distance = newNumber - getCurrentPictureNumber();
-    for (let i = 1; i <=3; i++) {
+    for (let i = 1; i <=4; i++) {
         let picture = document.getElementById('picture' + i);
         let leftString = getComputedStyle(picture).getPropertyValue('left');
         let leftNum = Number(leftString.slice(0, leftString.length - 2));
@@ -29,13 +29,13 @@ function moveLeft() {
     if (currentPictureNumber > 1 ) {
         displayPicture(currentPictureNumber - 1); 
     } else {
-        displayPicture(3)
+        displayPicture(4)
     }
 }
 
 function moveRight() {
     const currentPictureNumber = getCurrentPictureNumber();
-    if (currentPictureNumber < 3 ) {
+    if (currentPictureNumber < 4 ) {
         displayPicture(currentPictureNumber + 1);
     } else {
         displayPicture(1);
@@ -70,6 +70,10 @@ document.querySelector('#circle2').addEventListener("click", () => {
 
 document.querySelector('#circle3').addEventListener("click", () => {
     displayPicture(3);
+})
+
+document.querySelector('#circle4').addEventListener("click", () => {
+    displayPicture(4);
 })
 
 document.querySelector('#play').addEventListener("click", () => {
